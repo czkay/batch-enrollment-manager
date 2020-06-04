@@ -16,10 +16,9 @@ Logger output can be found in logs.txt.
 import config
 import csv
 import itertools
-import PySimpleGUI as sg
 import logging
 import os
-import shutil
+import PySimpleGUI as sg
 
 def initialise_logger():
     """Initialises a logger to log actions performed, as well as warnings/potential issues."""
