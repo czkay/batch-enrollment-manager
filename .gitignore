@@ -4,3 +4,4 @@ enrollment.txt
 logs.txt
 persons.txt
 photos/
+src/__pycache__
