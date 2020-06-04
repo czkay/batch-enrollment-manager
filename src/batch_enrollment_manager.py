@@ -7,8 +7,8 @@ The admin can manually input the NRIC corresponding to the employee shown in the
 
 Upon submission, the employee's NRIC and smartcard ID will be written into persons.txt, hence completing enrollment.
 
-To use, change config.py to paths of your choice. Enter `python batch_enrollment_manager.py`
-to run the script. Remember to install PySimpleGUI (pip install pysimplegui) as this script is dependent on that library.
+To use, change config.py to paths of your choice. Install PySimpleGUI (pip install pysimplegui) as
+this script is dependent on that library. Enter `python batch_enrollment_manager.py` to run the script. 
 
 Logger output can be found in logs.txt.
 """
@@ -23,7 +23,7 @@ import PySimpleGUI as sg
 def initialise_logger():
     """Initialises a logger to log actions performed, as well as warnings/potential issues."""
 
-    logging.basicConfig(filename='logs.txt', filemode='w', 
+    logging.basicConfig(filename='../logs.txt', filemode='w', 
             format='%(asctime)s %(levelname)s %(message)s',
             datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.INFO)
 
